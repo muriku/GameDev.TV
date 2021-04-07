@@ -2,7 +2,7 @@
 
 int main()
 {
-     std::cout << "Тест" << std::endl;
+     std::cout << "english not working" << std::endl;
     // Declare 3 number code
     const int CodeA = 2;
     const int CodeB = 4;
