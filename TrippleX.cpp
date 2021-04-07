@@ -2,11 +2,11 @@
 
 int main()
 {
-     std::cout << "english not working" << std::endl;
+     std::cout << "рус" << std::endl;
     // Declare 3 number code
-    const int CodeA = 2;
-    const int CodeB = 4;
-    const int CodeC = 9;
+    int CodeA = 2;
+    int CodeB = 4;
+    int CodeC = 9;
 
     int CodeSum = CodeA + CodeB + CodeC;
     int CodeProduct = CodeA * CodeB * CodeC;
@@ -20,8 +20,7 @@ int main()
  
     int GuessA, GuessB, GuessC;
     int GuessSum, GuessProduct;
-    GuessSum = GuessA + GuessB + GuessC;
-    GuessProduct = GuessA * GuessB * GuessC;
+    
 
     std::cout << "Enter CodeA: "; //<< std::endl;
     std::cin >> GuessA;
@@ -29,8 +28,14 @@ int main()
     std::cin >> GuessB;
     std::cout << "Enter CodeC: "; //<< std::endl;
     std::cin >> GuessC;
+
+    GuessSum = GuessA + GuessB + GuessC;
+    GuessProduct = GuessA * GuessB * GuessC;
+
     std::cout << std::endl;
     std::cout << "You entered:" << GuessA << GuessB << GuessC << std::endl;
+    std::cout << "GuessSum:" << GuessSum << std::endl;
+    std::cout << "GuessProduct:" << GuessProduct << std::endl;
     
     return 0;
 }
