@@ -2,7 +2,7 @@
 
 int main()
 {
-     std::cout << "рус" << std::endl;
+     std::cout << "rus not working рус" << std::endl;
     // Declare 3 number code
     int CodeA = 2;
     int CodeB = 4;
