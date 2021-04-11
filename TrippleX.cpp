@@ -1,4 +1,5 @@
 #include <iostream>
+#include <ctime>
 
 void Introduction(int Difficulty)
 {
@@ -13,9 +14,9 @@ bool PlayGame(int Difficulty)
     Introduction(Difficulty);
 
     // Declare 3 number bLevelComplite code
-    int CodeA = 1;
-    int CodeB = 1;
-    int CodeC = 1;
+    const int CodeA = rand() % Difficulty + 1;
+    const int CodeB = rand() % Difficulty + 1;
+    const int CodeC = rand() % Difficulty + 1;
 
     int CodeSum = CodeA + CodeB + CodeC;
     int CodeProduct = CodeA * CodeB * CodeC;
@@ -69,13 +70,14 @@ bool PlayGame(int Difficulty)
 int main()
 {
     
+    srand(time(NULL)); // Create new random sequence based on time of day
     int LevelDifficulty = 1;
     const int MaxLevel = 4;
     
      
     while (LevelDifficulty <= MaxLevel) //loop game until all level is complit
     {
-        
+        //std::cout << rand() % 2 << "\n"; вывод рандомного значения от 0-1
         bool bLevelComplite = PlayGame(LevelDifficulty); //запись результата завершения игры в переменную да или нет
         std::cin.clear(); //clear all errors
         std::cin.ignore(); //Discard the buffer
