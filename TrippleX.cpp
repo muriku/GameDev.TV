@@ -59,7 +59,7 @@ bool PlayGame(int Difficulty)
 
     else
     {
-        std::cout << "\nYou Lose! Your Level is the same: " << Difficulty << std::endl;
+        std::cout << "\nYou Lose! Retrying the level: " << Difficulty << std::endl;
         std::cout << std::endl;
 
         return false;
@@ -89,6 +89,6 @@ int main()
         
     }
     
-
+    std::cout << "\nWell Done The game is over\n";
     return 0;
 }
